@@ -1,20 +1,20 @@
+/* Reset de Estilos: Define regras iniciais para todos os elementos */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: white;
+    color: white;/* Cor do texto para todos os elementos */
 }
-
+/* Estilo do Corpo da Página */
 body {
-    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+    background: linear-gradient(#01f964 0%, #016716 33.33%, #014314 66.67%, #00270e 100%);
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-
-body::before {
+/* Adiciona uma imagem de fundo à página */
+body::before {/* Ele permite adicionar conteúdo antes do conteúdo real do elemento selecionado.*/
     background-image: url("img/code.png");
     background-repeat: no-repeat;
     background-position: right;
@@ -23,9 +23,9 @@ body::before {
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0.4;
+    opacity: 0.4;/* Opacidade da imagem de fundo */
 }
-
+/* Estilo do Contêiner Principal */
 .container {
     width: 1200px;
     height: 600px;
@@ -35,53 +35,46 @@ body::before {
     border-radius: 24px;
     border: 1px solid #1875E8;
     box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
-    background-image: url("img/Ruido.png");
     background-size: 100% 100%;
     position: relative;
 }
-
-.container__conteudo {
+/* Estilo do Conteúdo Dentro do Contêiner */
+.container__content {
     display: flex;
     align-items: center;
     position: absolute;
     bottom: 0;
 }
-
-.container__informacoes {
+/* Dimensionando a imagem */
+.container__imagem-robo {
+    width: 50%;
+    height: auto; 
+}
+/* Estilo das Informações Dentro do Contêiner */
+.container__information {
     flex: 1;
     padding: 20px;
 }
-
-.container__botao {
-    border-radius: 16px;
-    background: #1875E8;
-    padding: 16px 24px;
-    width: 100%;
-    font-size: 24px;
-    font-weight: 700;
-    border: none;
-    margin-top: 16px;
-}
-
-.container__texto {
+/* Estilo do Texto Dentro do Contêiner */
+.container__text {
     margin: 16px 0 16px 0;
 }
-
-.container__texto-azul {
+/* Estilo do Texto Azul */
+.container__text-blue {
     color: #1875E8;
 }
-
+/* Estilo dos Títulos */
 h1 {
     font-family: 'Chakra Petch', sans-serif;
     font-size: 72px;
 }
-
+/* Estilo dos Títulos, Parágrafos e Botões */
 h2,
 p,
 button {
     font-family: 'Inter', sans-serif;
 }
-
+/* Estilo dos Subtítulos */
 h2 {
     font-size: 32px;
     font-weight: 400;
