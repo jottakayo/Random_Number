@@ -71,6 +71,9 @@ body::before {/* Ele permite adicionar conteúdo antes do conteúdo real do elem
     display: flex;
     gap: 2em;
 }
+button:disabled {
+    background-color: gray;
+}
 /* Dimensionando a imagem */
 .container__imagem-robo {
     width: 50%;

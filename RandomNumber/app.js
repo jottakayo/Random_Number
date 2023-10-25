@@ -27,6 +27,57 @@
 // document.getElementById("result").textContent = `Você acertou o numero secreto ${secretNumber} com somente ${attempts} ${wordAttempts} !`;
 // }
 
+let secretNumber = generateSecretNumber();
+console.log(secretNumber);
+
+let attempts = 1;
+//Função para mudar o texto em html
+function printText(tag, text){//Função com 2 parâmetros para imprimir textos na tag HTML
+    let camp = document.querySelector(tag);
+    camp.innerHTML = text;
+}
+startMessageGame();
+
+//Função que checa o numero gerado pelo usuário e compara com o secreto
 function checkKick () {
-    console.log('O botão foi clicado');
+    let kick = document.querySelector('input').value//Método querySelector para buscar valor de inout
+    console.log(kick == secretNumber);
+        //Logica para determinar o numero secreto correto
+        if ( kick == secretNumber){
+            let wordAttempts = attempts > 1 ? 'tentativas' : 'tentativa';
+            printText('h1', 'Você <span class="container__text-blue">acertou</span> !');
+            printText('h2', `Você acertou o numero secreto ${secretNumber} com ${attempts} ${wordAttempts}.`);
+            document.getElementById('reiniciar').removeAttribute('disabled');
+        } else {
+            if ( kick > secretNumber ){ 
+                printText('h1', 'Você errou, tente <span class="container__text-blue">novamente</span> !');
+                printText('h2', `O numero secreto é menor.` )  
+        } else {
+            printText('h1', 'Você errou, tente <span class="container__text-blue">novamente</span> !');
+            printText('h2', `O numero secreto é maior.`)
+        }
+           attempts++;
+    }
+}
+//Função para gera um numero secreto
+function generateSecretNumber() {
+    return parseInt(Math.random() * 50 + 1);
+}
+//Mensagem inicial do jogo
+function startMessageGame(){
+    printText('h1', 'Jogo do numero <span class="container__text-blue">secreto</span>');
+    printText('h2', 'Vamos ver como você se sai !.');
+}
+//função para deixa vazio o input do kick
+function cleanKick(){
+    kick = document.querySelector('input');
+    kick.value = ''; 
+}
+//Criar função para reiniciar o jogo
+function reloadGame() {
+    secretNumber = generateSecretNumber();
+    console.log(secretNumber);
+    startMessageGame();
+    attempts = 1;
+    cleanKick();
 }
