@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="style.css">
     <title>JS Game</title>
 </head>
-<body onload="startGame()">
+<body>
     <div class="container">
         <div class="container__content">
-            <img src="./img/robot.png" alt="robô mergulhador" class="container__imagem-robo" />
+            <img src="./img/robot.png" alt="robô mergulhador" class="container__img-robo" />
             <div class="container__information">
-                <img src="./img/trophy.png" alt="ícone de um troféu" />
+                <img src="./img/trophy.png" class="container__img-trophy" alt="ícone de um troféu" />
                  <div class="container__text">
                     <h1></h1>
                     <h2 id="result"></h2>
                     <br>
-                    <input placeholder="Escolha um numero entre 1 e 50" type="number" min="1" max="10" class="container__input">
+                    <input placeholder="Descubra o numero entre 1 e 50" type="number" min="1" max="50" class="container__input">
                 <div class="chute container__buttons">
                     <button onclick="checkKick()" class="container__button">Chutar Nº</button>
-                    <button onclick="reloadGame()" id="reiniciar" class="container__button" disabled>Novo jogo</button>
+                    <button onclick="reloadGame()" id="reload" class="container__button" disabled>Novo jogo</button>
                 </div>
                 </div>
             </div>
