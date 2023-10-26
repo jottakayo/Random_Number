@@ -1,4 +1,4 @@
-#<h1> Projeto Random Game 🚀
+#<h1> Projeto Random Game 🚀</h1>
 <hr>
 Este é o projeto Front e Back-End de um jogo que gera números aleatórios entre 1 e 50, onde os usuários podem dar **palpites**, bem como ter a resposta do seu **palpite** em formato de pista para que acerte o numero.
 
