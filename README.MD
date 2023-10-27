@@ -55,7 +55,7 @@ O back-end do projeto é composto pela a alteração do DOM do HTML, que utiliza
 
 <h2>Deploy</h2>
 
- O site está hospedado no [Vercel](), uma plataforma que hospeda sites estáticos para estudantes.
+ O site está hospedado no [Vercel](), uma plataforma que hospeda projetos, sites estáticos.
 
 Para jogar:
 
