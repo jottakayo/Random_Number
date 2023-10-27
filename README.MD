@@ -55,11 +55,11 @@ O back-end do projeto é composto pela a alteração do DOM do HTML, que utiliza
 
 <h2>Deploy</h2>
 
- O site está hospedado no [Vercel](), uma plataforma que hospeda projetos, sites estáticos.
+ O **jogo** está hospedado no [GitHubPages](https://pages.github.com), uma plataforma que hospeda projetos, sites estáticos.
 
 Para jogar:
 
-Acesse o site [Random game]().
+Acesse o site [Random game](https://jottakayo.github.io/random_number/).
 
 Digite um número entre 1 e 10 no input.
 
