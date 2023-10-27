@@ -52,6 +52,8 @@ O back-end do projeto é composto pela a alteração do DOM do HTML, que utiliza
 <h2>Página</h2>
 
 
+![Imagem da pagina](Game_Number/img/page.png)
+
 
 <h2>Deploy</h2>
 
