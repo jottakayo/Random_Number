@@ -33,5 +33,5 @@ O back-end do projeto é composto pela a alteração do DOM do HTML, que utiliza
 
 <h3>Técnicas utilizadas</h3>
 
-    * `Declaração`` de variáveis globais: As variáveis listNumber e attempts são declaradas globalmente para que possam ser acessadas por todas as funções.
+    * <code>Declaração</code> de variáveis globais: As variáveis listNumber e attempts são declaradas globalmente para que possam ser acessadas por todas as funções.
 
