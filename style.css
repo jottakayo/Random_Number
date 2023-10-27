@@ -70,6 +70,12 @@ body::before {/* Ele permite adicionar conteúdo antes do conteúdo real do elem
     font-family: 'Inter', sans-serif;
     
 }
+.container__button:active{
+    transition-duration: 0s;
+    
+    background-color: #00759c;
+
+}
 /*Dimensionamento*/
 .container__buttons {
     display: flex;
