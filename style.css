@@ -55,6 +55,7 @@ body::before {/* Ele permite adicionar conteúdo antes do conteúdo real do elem
     font-weight: 700;
     border: none;
     margin-top: 2rem;
+    cursor: pointer;
 }
 /*Estilização do input*/
 .container__input  {
@@ -72,7 +73,6 @@ body::before {/* Ele permite adicionar conteúdo antes do conteúdo real do elem
 }
 .container__button:active{
     transition-duration: 0s;
-    
     background-color: #00759c;
 
 }
