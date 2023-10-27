@@ -32,6 +32,6 @@ Em meu projeto o **CSS** cria um layout flexível com um contêiner principal qu
 O back-end do projeto é composto pela a alteração do DOM do HTML, que utiliza de **SCRIPTS** javascript para isso, que responde ao numero escolhido pelo usuário e responde-o com uma dica de como acertar o **numero****aleatório**.
 
 <h3>Técnicas utilizadas</h3>
-
-    * <code>Declaração</code> de variáveis globais: As variáveis listNumber e attempts são declaradas globalmente para que possam ser acessadas por todas as funções.
+<br>
+    * <code> Declaração </code> de variáveis globais: As variáveis listNumber e attempts são declaradas globalmente para que possam ser acessadas por todas as funções.
 
