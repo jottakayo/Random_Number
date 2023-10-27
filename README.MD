@@ -60,6 +60,9 @@ O back-end do projeto é composto pela a alteração do DOM do HTML, que utiliza
 Para jogar:
 
 Acesse o site [Random game]().
+
 Digite um número entre 1 e 10 no input.
+
 Clique no botão "Adivinhar".
+
 *Divirta-se!*
