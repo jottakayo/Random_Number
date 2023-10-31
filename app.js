@@ -28,7 +28,8 @@ function reloadGame() {
     startMessageGame();
     attempts = 1;
     cleanKick();
-    document.getElementById('reload').setAttribute('disabled', true);//Com esse method(setAttribute) é necessário dar 2 parâmetros, sendo o segundo se você quer o atributo escolhido on or off.
+    document.getElementById('new_game_button').setAttribute('disabled', true);//Com esse method(setAttribute) é necessário dar 2 parâmetros, sendo o segundo se você quer o atributo escolhido on or off.
+    document.getElementById('kick_button').removeAttribute('disabled');
 }
 
 //Função para gera um numero secreto
@@ -53,7 +54,8 @@ function checkKick () {
             let wordAttempts = attempts > 1 ? 'tentativas' : 'tentativa';
             printText('h1', 'Você <span class="container__text-blue">acertou</span> !');
             printText('h2', `Você acertou o numero secreto com ${attempts} ${wordAttempts}.`);
-            document.getElementById('reload').removeAttribute('disabled');
+            document.getElementById('new_game_button').removeAttribute('disabled');
+            document.getElementById('kick_button').setAttribute('disabled', true);
         } else {
             //If para dar dicas do numero correto
             if ( kick > secretNumber ){ 
