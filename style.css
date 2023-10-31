@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: white;/* Cor do texto para todos os elementos */
+    color: white;
 }
 /* Estilo do Corpo da Página */
 body {
@@ -14,7 +14,7 @@ body {
     justify-content: center;
 }
 /* Adiciona uma imagem de fundo à página */
-body::before {/* Ele permite adicionar conteúdo antes do conteúdo real do elemento selecionado.*/
+body::before {
     background-image: url("img/code.png");
     background-repeat: no-repeat;
     background-position: right;
@@ -23,7 +23,7 @@ body::before {/* Ele permite adicionar conteúdo antes do conteúdo real do elem
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0.4;/* Opacidade da imagem de fundo */
+    opacity: 0.4;
 }
 /* Estilo do Contêiner Principal */
 .container {
