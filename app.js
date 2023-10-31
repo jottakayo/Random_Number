@@ -28,7 +28,7 @@ function reloadGame() {
     startMessageGame();
     attempts = 1;
     cleanKick();
-    document.getElementById('new_game_button').setAttribute('disabled', true);//Com esse method(setAttribute) é necessário dar 2 parâmetros, sendo o segundo se você quer o atributo escolhido on or off.
+    document.getElementById('new_game_button').setAttribute('disabled', true);
     document.getElementById('kick_button').removeAttribute('disabled');
 }
 
@@ -36,10 +36,10 @@ function reloadGame() {
 function generateSecretNumber() {
     let chosenNumber = parseInt(Math.random() * 10 + 1);
     //Verificação para que o numero aleatório não seja repetido
-    if (listNumber.includes(chosenNumber)){//includes é um método para verificar se existe ja aquele conteúdo no array, retornando true or false
+    if (listNumber.includes(chosenNumber)){
         return generateSecretNumber();
     }else{
-        listNumber.push(chosenNumber);//Push para incluir o numero no array
+        listNumber.push(chosenNumber);
         console.log(listNumber);
         return chosenNumber;
     }
@@ -47,7 +47,7 @@ function generateSecretNumber() {
 
 //Função que checa o numero gerado pelo usuário e compara com o secreto
 function checkKick () {
-    let kick = document.querySelector('input').value//Método querySelector para buscar valor de input
+    let kick = document.querySelector('input').value
     console.log(kick == secretNumber);
         //Logica para determinar o numero secreto correto
         if ( kick == secretNumber){
