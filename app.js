@@ -71,8 +71,12 @@ function checkKick () {
 }
 
 const button_recommendation = document.getElementById("recommendation");
+const button_recommendation_close = document.getElementById("button_recommendation_close");
 const dialog = document.querySelector("dialog");
 
 button_recommendation.onclick = function(){
     dialog.showModal();
+}
+button_recommendation_close.onclick = function () {
+    dialog.close();
 }
