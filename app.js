@@ -69,3 +69,10 @@ function checkKick () {
         attempts++;
     }
 }
+
+const button_recommendation = document.getElementById("recommendation");
+const dialog = document.querySelector("dialog");
+
+button_recommendation.onclick = function(){
+    dialog.showModal();
+}

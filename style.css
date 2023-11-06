@@ -25,6 +25,21 @@ body::before {
     height: 100%;
     opacity: 0.4;
 }
+dialog {
+    margin: 0 auto;
+    width: 50%;
+    height: 10%;
+    border-radius: 25px;
+    box-shadow: 0 0 10rem rgba(0, 0, 0, 1);
+}
+dialog h3,p{
+    color: #000;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+
 /* Estilo do Contêiner Principal */
 .container {
     width: 1200px;
@@ -37,6 +52,23 @@ body::before {
     box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
     background-size: 100% 100%;
     position: relative;
+}
+#recommendation {
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#recommendation:hover {
+    background-color: grey;
 }
 /* Estilo do Conteúdo Dentro do Contêiner */
 .container__content {
